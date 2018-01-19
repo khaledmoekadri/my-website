@@ -1,0 +1,102 @@
+<html>
+<head><title>Home page</title>
+<script src="jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$("#flip").click(function(){
+$("#panel").slideDown(600);
+});
+});
+</script>
+<style>
+#footer{
+      background-color:red;
+       color:white;
+       clear:both;
+       text-align:center;
+       padding:10px;
+}
+
+#panel,#flip
+{
+padding: 5px;
+text-align: center;
+background-color: red;
+border: solid 1px black;
+}
+#panel
+{
+	padding: 30px;
+	display: none; /*none or block*/
+}
+</style>
+
+
+
+
+<style type="text/css">
+ul{
+font-family:arial;
+font-size:14px;
+margin:0;
+padding:0;
+list-style:none;
+}
+ul li {
+display: block;
+position: relative;
+float:left;
+}
+li ul {
+display:none;
+}
+ul li a{
+display:block;
+text-decoration:none;
+color:#ffffff;
+border-top:1px solid #ffffff;
+padding:5px 15px 5px 15px;
+background:blue;
+margin-left:1px;
+white-space:nowrap;
+}
+ul li a:hover{
+background:#3b3b3b;
+}
+li:hover ul {
+display:block;
+position:absolute;
+}
+li:hover li{
+float:none;
+font-size:11px;
+}
+li:hover a{background:#3b3b3b;}
+li:hover li a:hover{
+background:#1e7c9a;
+}
+</style>
+</head>
+
+
+<body background="23316156_1855141194797938_120994597_n.jpg">
+<div id="flip"><marquee scrolldelay="200" height="40" width="1400" bgcolor="red" direction="right"><font color="blue">Click t slide down</font></marquee><br></div>
+<div id="panel">
+<ul id="menu">
+<li><a href="startpage.html">home</a></li>
+<li><a href="login.php">Login</a>
+<li><a href="register.php">Signup</a>
+<li><a href="admin .html">Admin Login</a>
+<ul>
+
+</ul>
+</li>
+</ul>
+</div>
+
+</body><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="footer">
+<i><b>WELCOME TO OUR HOME PAGE</b></i>
+</div>
+</html>

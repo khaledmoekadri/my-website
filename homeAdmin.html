@@ -1,0 +1,152 @@
+<html>
+<head><title>Home page</title>
+<script src="jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$("#flip").click(function(){
+$("#panel").slideDown(600);
+});
+});
+</script>
+<style>
+#footer{
+      background-color:red;
+       color:white;
+       clear:both;
+       text-align:center;
+       padding:10px;
+}
+
+#panel,#flip
+{
+padding: 5px;
+text-align: center;
+background-color: red;
+border: solid 1px black;
+}
+#panel
+{
+	padding: 30px;
+	display: none; /*none or block*/
+}
+</style>
+
+
+
+
+<style type="text/css">
+ul{
+font-family:arial;
+font-size:14px;
+margin:0;
+padding:0;
+list-style:none;
+}
+ul li {
+display: block;
+position: relative;
+float:left;
+}
+li ul {
+display:none;
+}
+ul li a{
+display:block;
+text-decoration:none;
+color:#ffffff;
+border-top:1px solid #ffffff;
+padding:5px 15px 5px 15px;
+background:blue;
+margin-left:1px;
+white-space:nowrap;
+}
+ul li a:hover{
+background:#3b3b3b;
+}
+li:hover ul {
+display:block;
+position:absolute;
+}
+li:hover li{
+float:none;
+font-size:11px;
+}
+li:hover a{background:#3b3b3b;}
+li:hover li a:hover{
+background:#1e7c9a;
+}
+</style>
+</head>
+
+
+<body background="23316156_1855141194797938_120994597_n.jpg">
+<div id="flip"><marquee scrolldelay="200" height="40" width="1400" bgcolor="red" direction="right"><font color="blue">Click t slide down</font></marquee><br></div>
+<div id="panel">
+<ul id="menu">
+<li><a href="homeAdmin.html">WELCOME</a></li>
+
+<li><a href="startpage.html">logout</a>
+<ul>
+
+</ul>
+</li>
+</ul>
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>This For users Table</h1>
+<form action="insertAdmin.php" method="post">
+	name:<input type="text" name="name">
+	email:<input type="text" name="email">
+	password:<input type="text" name="password">
+	<button type="submit">Insert User</button>
+</form>
+<form action="showAdmin.php" method="post">
+<input type="submit" value="show the users data" name="b">
+</form>
+<form method="post" action="dataout.php">
+ID:<input type="Text" id="idelete" name="idelete"><br>
+<input type="Submit" name="submit" value="delete">
+</form>
+<h1> this for the Customers table</h1>
+<form action="insertCustomer.php" method="post">
+	name:<input type="text" name="cusname">
+	email:<input type="text" name="cusemail">
+	phone:<input type="text" name="cusphone">
+	address:<input type="text" name="cusaddress">
+	created date:<input type="text" name="cuscreated">
+	modified date:<input type="text" name="cusmodified">
+	
+	<button type="submit">insert Customers</button>
+	
+</form>
+<form action="showCustomer.php" method="post">
+<input type="submit" value="show the customers created data" name="c">
+</form>
+
+<h1>and this for creating a new products</h1>
+
+<form action="insertProduct.php" method="post">
+	name:<input type="text" name="proname">
+	Description:<input type="text" name="prodescription">
+	price:<input type="text" name="proprice">
+	date created:<input type="text" name="procreated">
+	created date:<input type="text" name="promodified">
+	
+	
+	<button type="submit">insert new products</button>
+	
+</form>
+<form action="showProducts.php" method="post">
+<input type="submit" value="show the products created data" name="d">
+</form>
+</body>
+</html>
+</body><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</html>
